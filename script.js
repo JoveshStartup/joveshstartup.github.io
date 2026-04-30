@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Reveal animations on scroll
     const observerOptions = {
-        threshold: 0.15,
+        threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
     };
 
@@ -53,27 +53,21 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('revealed');
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    document.querySelectorAll('.product-card, .hero-content, .hero-card').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(40px)';
-        el.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
-        observer.observe(el);
-    });
-
-    // Apply revelation logic
-    window.addEventListener('scroll', () => {
-        document.querySelectorAll('.product-card, .hero-content, .hero-card').forEach(el => {
-            const rect = el.getBoundingClientRect();
-            if (rect.top < window.innerHeight - 100) {
-                el.style.opacity = '1';
-                el.style.transform = 'translateY(0)';
-            }
-        });
+    document.querySelectorAll('.product-card, .hero-content, .hero-card, .section-title, .about-content').forEach(el => {
+        // Only set initial hidden state if not already revealed
+        if (!el.classList.contains('revealed')) {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+            observer.observe(el);
+        }
     });
 
     // Form submission

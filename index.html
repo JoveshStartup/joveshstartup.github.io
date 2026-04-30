@@ -26,8 +26,11 @@
             <nav>
                 <div class="logo-group">
                     <a href="#" class="logo-link">
-                        <img src="assets/jovesh logo.png" alt="Jovesh Logo" class="logo-img">
-                        <span class="brand-name">Jovesh <span>Startup</span></span>
+                        <img src="assets/jovesh logo.png" alt="Jovesh Logo" class="logo-img" loading="lazy">
+                        <div class="brand-text">
+                            <span class="brand-name">Jovesh</span>
+                            <span class="brand-tagline">Startup</span>
+                        </div>
                     </a>
                 </div>
                 <ul class="nav-links">
@@ -64,16 +67,23 @@
                     </div>
                     <div class="hero-visual">
                         <div class="hero-card" style="padding: 0; overflow: hidden;">
-                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: rgba(255,255,255,0.05); border-bottom: 1px solid var(--glass-border);">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: rgba(255,255,255,0.05); border-bottom: 1px solid var(--glass-border);">
                                 <div style="display: flex; gap: 0.5rem;">
-                                    <div style="width: 10px; height: 10px; background: #ef4444; border-radius: 50%;"></div>
-                                    <div style="width: 10px; height: 10px; background: #fbbf24; border-radius: 50%;"></div>
-                                    <div style="width: 10px; height: 10px; background: #10b981; border-radius: 50%;"></div>
+                                    <div style="width: 10px; height: 10px; background: #ef4444; border-radius: 50%;">
+                                    </div>
+                                    <div style="width: 10px; height: 10px; background: #fbbf24; border-radius: 50%;">
+                                    </div>
+                                    <div style="width: 10px; height: 10px; background: #10b981; border-radius: 50%;">
+                                    </div>
                                 </div>
-                                <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600; letter-spacing: 1px;">UNIBOT AI</div>
+                                <div
+                                    style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600; letter-spacing: 1px;">
+                                    UNIBOT AI</div>
                                 <div style="width: 40px;"></div> <!-- Spacer -->
                             </div>
-                            <img src="assets/unibot.png" alt="UniBot AI Interface" style="width: 100%; display: block; filter: brightness(0.9);">
+                            <img src="assets/unibot.png" alt="UniBot AI Interface"
+                                style="width: 100%; display: block; filter: brightness(0.9);">
                         </div>
                     </div>
                 </div>
@@ -90,42 +100,52 @@
                 <div class="products-grid">
                     <!-- UniBot -->
                     <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fa-solid fa-robot"></i>
+                        <div class="product-image">
+                            <img src="assets/unibot.png" alt="UniBot AI" loading="lazy">
                         </div>
-                        <h3>UniBot AI</h3>
-                        <p>Intelligent chatbot ecosystem for students, staff, and visitors. Real-time support that never
-                            sleeps.</p>
-                        <a href="#" class="learn-more">
-                            Explore UniBot
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
+                        <div class="product-info">
+                            <h3>UniBot AI</h3>
+                            <p>Intelligent chatbot ecosystem for students, staff, and visitors. Real-time support that
+                                never sleeps.</p>
+                            <a href="#" class="learn-more">
+                                Explore UniBot
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
                     </div>
                     <!-- UniCabinet AI -->
                     <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fa-solid fa-box-archive"></i>
+                        <div class="product-image">
+                            <img src="assets/UniCabinet AI.png" alt="UniCabinet AI" loading="lazy">
                         </div>
-                        <h3>UniCabinet AI</h3>
-                        <p>Secure digital file management. Intelligent ingestion, storage, and retrieval of
-                            institutional knowledge.</p>
-                        <a href="#" class="learn-more">
-                            Discover More
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
+                        <div class="product-info">
+                            <h3>UniCabinet AI</h3>
+                            <p>Secure digital file management. Intelligent ingestion, storage, and retrieval of
+                                institutional knowledge.</p>
+                            <a href="#" class="learn-more">
+                                Discover More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
                     </div>
                     <!-- AfriMaintain AI -->
                     <div class="product-card">
-                        <div class="product-icon">
-                            <i class="fa-solid fa-bolt"></i>
+                        <div class="product-image">
+                            <!-- Placeholder until user generates image -->
+                            <div class="image-placeholder">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span>Generating Image...</span>
+                            </div>
                         </div>
-                        <h3>AfriMaintain AI</h3>
-                        <p>Predictive equipment maintenance. AI-driven failure detection to minimize downtime and
-                            maximize efficiency.</p>
-                        <a href="#" class="learn-more">
-                            Learn More
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
+                        <div class="product-info">
+                            <h3>AfriMaintain AI</h3>
+                            <p>Predictive equipment maintenance. AI-driven failure detection to minimize downtime and
+                                maximize efficiency.</p>
+                            <a href="#" class="learn-more">
+                                Learn More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -137,10 +157,10 @@
                 <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 6rem; align-items: center;">
                     <div style="position: relative;">
                         <img src="assets/jovesh logo.png" alt="About Jovesh"
-                            style="width: 100%; opacity: 0.1; filter: grayscale(1);">
+                            style="width: 100%; opacity: 0.35; filter: grayscale(0.2) brightness(1.2);" loading="lazy">
                         <div
                             style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 100%;">
-                            <h2 style="font-size: 5rem; font-weight: 900; color: var(--accent); opacity: 0.1;">JOVESH
+                            <h2 style="font-size: 5rem; font-weight: 900; color: var(--accent); opacity: 0.25;">JOVESH
                             </h2>
                         </div>
                     </div>
@@ -237,12 +257,16 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="assets/jovesh logo.png" alt="Jovesh Logo" style="height: 50px; margin-bottom: 1.5rem;">
-                    <p style="color: var(--text-muted); max-width: 300px; margin-bottom: 2rem;">Pioneering AI Powered solutions for
+                    <p
+                        style="color: var(--text-muted); max-width: 300px; margin-bottom: 2rem; font-size: 1.1rem; line-height: 1.8;">
+                        Pioneering AI Powered solutions for
                         sustainable institutions management and governance.</p>
-                    <div class="footer-collab">
-                        <p style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">Official Partner</p>
-                        <img src="assets/university_logo.png" alt="Maasai Mara University" style="height: 60px; filter: grayscale(1) brightness(1.5); opacity: 0.8;">
+                    <div class="footer-collab" style="display: none;">
+                        <p
+                            style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 1px;">
+                            Official Partner</p>
+                        <img src="assets/university_logo.png" alt="Maasai Mara University"
+                            style="height: 60px; filter: grayscale(1) brightness(1.5); opacity: 0.8;" loading="lazy">
                     </div>
                 </div>
                 <div class="footer-links">
@@ -262,6 +286,22 @@
                     </ul>
                 </div>
             </div>
+
+            <div class="footer-partners">
+                <div class="partner-logos">
+                    <div class="partner-item">
+                        <img src="assets/university_logo.png" alt="Maasai Mara University" class="partner-img"
+                            loading="lazy">
+                        <span>Maasai Mara University</span>
+                    </div>
+                    <div class="partner-divider"></div>
+                    <div class="partner-item">
+                        <img src="assets/jovesh logo.png" alt="Jovesh Logo" class="partner-img" loading="lazy">
+                        <span>Jovesh Startup</span>
+                    </div>
+                </div>
+            </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2026 Jovesh Startup. All rights reserved. In collaboration with Maasai Mara University.</p>
             </div>
