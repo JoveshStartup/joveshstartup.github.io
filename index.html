@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jovesh Startup | Pioneering AI Solutions</title>
-    <meta name="description" content="Pioneering AI Powered solutions for sustainable institutions management and governance. Products include UniBot, UniCabinet AI, and AfriMaintain AI.">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
-    
+    <meta name="description"
+        content="Pioneering AI Powered solutions for sustainable institutions management and governance. Products include UniBot, UniCabinet AI, and AfriMaintain AI.">
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <div class="bg-glow">
+        <div class="glow-1"></div>
+        <div class="glow-2"></div>
+    </div>
+
     <header id="header">
         <div class="container">
             <nav>
-                <a href="#" class="logo-wrapper">
-                    <img src="assets/logo.png" alt="Jovesh Logo" class="logo-img">
-                    <span class="logo-text">Jovesh</span>
-                </a>
+                <div class="logo-group">
+                    <a href="#" class="logo-link">
+                        <img src="assets/jovesh logo.png" alt="Jovesh Logo" class="logo-img">
+                    </a>
+                    <img src="assets/university_logo.png" alt="Maasai Mara University" class="uni-logo">
+                </div>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#products">Products</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                <div class="header-cta">
+                    <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Join
+                        the Future</a>
+                </div>
             </nav>
         </div>
     </header>
@@ -40,12 +48,33 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="container">
-                <div class="hero-content">
-                    <h1>Pioneering AI Powered Solutions</h1>
-                    <p>Sustainable institutions management and governance through cutting-edge artificial intelligence.</p>
-                    <div class="cta-group">
-                        <a href="#products" class="btn btn-primary">Explore Products</a>
-                        <a href="#about" class="btn" style="border: 1px solid var(--glass-border)">Learn More</a>
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <span class="hero-tag">Intelligent Governance</span>
+                        <h1>Pioneering <span>AI Powered</span> Solutions</h1>
+                        <p>We build sustainable solutions for institution management and governance, powered by the next
+                            generation of artificial intelligence.</p>
+                        <div class="cta-group">
+                            <a href="#products" class="btn btn-primary">
+                                Explore Products
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-outline">Schedule Demo</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-card" style="padding: 0; overflow: hidden;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: rgba(255,255,255,0.05); border-bottom: 1px solid var(--glass-border);">
+                                <div style="display: flex; gap: 0.5rem;">
+                                    <div style="width: 10px; height: 10px; background: #ef4444; border-radius: 50%;"></div>
+                                    <div style="width: 10px; height: 10px; background: #fbbf24; border-radius: 50%;"></div>
+                                    <div style="width: 10px; height: 10px; background: #10b981; border-radius: 50%;"></div>
+                                </div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600; letter-spacing: 1px;">UNIBOT AI</div>
+                                <div style="width: 40px;"></div> <!-- Spacer -->
+                            </div>
+                            <img src="assets/unibot.png" alt="UniBot AI Interface" style="width: 100%; display: block; filter: brightness(0.9);">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -54,57 +83,94 @@
         <!-- Products Section -->
         <section id="products" class="section">
             <div class="container">
-                <div class="section-header">
-                    <h2>Our AI Products</h2>
-                    <p>Revolutionizing institutional efficiency with specialized AI agents.</p>
+                <div class="section-title">
+                    <h2>Our AI Ecosystem</h2>
+                    <p>Tailored intelligence for every institutional need.</p>
                 </div>
                 <div class="products-grid">
                     <!-- UniBot -->
                     <div class="product-card">
-                        <img src="assets/unibot.png" alt="UniBot AI" class="product-img">
+                        <div class="product-icon">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
                         <h3>UniBot AI</h3>
-                        <p>AI-Powered chatbot for student, staff, and visitor support services. Automate responses and enhance support availability 24/7.</p>
-                        <a href="#" class="btn btn-primary" style="margin-top: auto;">Explore UniBot</a>
+                        <p>Intelligent chatbot ecosystem for students, staff, and visitors. Real-time support that never
+                            sleeps.</p>
+                        <a href="#" class="learn-more">
+                            Explore UniBot
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
                     </div>
                     <!-- UniCabinet AI -->
                     <div class="product-card">
-                        <img src="assets/unicabinet.png" alt="UniCabinet AI" class="product-img">
+                        <div class="product-icon">
+                            <i class="fa-solid fa-box-archive"></i>
+                        </div>
                         <h3>UniCabinet AI</h3>
-                        <p>Secure Digital File Management System. Intelligent Document & Knowledge Management for organized, secure, and efficient operations.</p>
-                        <a href="#" class="btn btn-primary" style="margin-top: auto;">Secure Your Data</a>
+                        <p>Secure digital file management. Intelligent ingestion, storage, and retrieval of
+                            institutional knowledge.</p>
+                        <a href="#" class="learn-more">
+                            Discover More
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
                     </div>
                     <!-- AfriMaintain AI -->
                     <div class="product-card">
-                        <img src="assets/afrimaintain.png" alt="AfriMaintain AI" class="product-img">
+                        <div class="product-icon">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
                         <h3>AfriMaintain AI</h3>
-                        <p>Proactive Predictive Equipment Failures. Minimize downtime with AI-driven maintenance scheduling and failure prediction.</p>
-                        <a href="#" class="btn btn-primary" style="margin-top: auto;">Prevent Failures</a>
+                        <p>Predictive equipment maintenance. AI-driven failure detection to minimize downtime and
+                            maximize efficiency.</p>
+                        <a href="#" class="learn-more">
+                            Learn More
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="section" style="background: var(--secondary)">
+        <section id="about" class="section" style="background: rgba(15, 23, 42, 0.5);">
             <div class="container">
-                <div class="contact-container" style="display: block; text-align: center;">
-                    <h2 style="margin-bottom: 2rem;">About Jovesh Startup</h2>
-                    <p style="max-width: 800px; margin: 0 auto 2rem; font-size: 1.1rem; color: var(--text-muted);">
-                        We are dedicated to transforming how institutions operate. By leveraging AI, we provide tools that ensure sustainability, transparency, and high performance in governance and management.
-                    </p>
-                    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-                        <div style="padding: 2rem; background: var(--primary); border-radius: 12px; min-width: 200px;">
-                            <h4 style="color: var(--accent); font-size: 2rem;">100%</h4>
-                            <p>Secure AI</p>
+                <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 6rem; align-items: center;">
+                    <div style="position: relative;">
+                        <img src="assets/jovesh logo.png" alt="About Jovesh"
+                            style="width: 100%; opacity: 0.1; filter: grayscale(1);">
+                        <div
+                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 100%;">
+                            <h2 style="font-size: 5rem; font-weight: 900; color: var(--accent); opacity: 0.1;">JOVESH
+                            </h2>
                         </div>
-                        <div style="padding: 2rem; background: var(--primary); border-radius: 12px; min-width: 200px;">
-                            <h4 style="color: var(--accent); font-size: 2rem;">24/7</h4>
-                            <p>Support</p>
-                        </div>
-                        <div style="padding: 2rem; background: var(--primary); border-radius: 12px; min-width: 200px;">
-                            <h4 style="color: var(--accent); font-size: 2rem;">AI-Driven</h4>
-                            <p>Governance</p>
-                        </div>
+                    </div>
+                    <div>
+                        <span
+                            style="color: var(--gold); font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Our
+                            Mission</span>
+                        <h2 style="font-size: 3rem; margin: 1rem 0 2rem;">Revolutionizing Institutional Governance</h2>
+                        <p style="font-size: 1.1rem; color: var(--text-muted); margin-bottom: 2rem;">
+                            Born out of a vision to digitize and secure the African institutional landscape, Jovesh
+                            Startup combines cutting-edge AI research with practical, scalable solutions.
+                        </p>
+                        <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <li style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--accent);"></i>
+                                <span>Secure Infrastructure</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--accent);"></i>
+                                <span>AI-Driven Insights</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--accent);"></i>
+                                <span>Scalable Design</span>
+                            </li>
+                            <li style="display: flex; align-items: center; gap: 1rem;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--accent);"></i>
+                                <span>Local Expertise</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -113,47 +179,92 @@
         <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="container">
-                <div class="section-header">
-                    <h2>Connect With Us</h2>
-                    <p>Have questions? We're here to help you integrate AI into your workflow.</p>
-                </div>
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <h3>Get in Touch</h3>
-                        <div class="contact-item">
-                            <i class="fa-solid fa-phone"></i>
-                            <div>
-                                <p>+254 700 740 995</p>
-                                <p>+254 790 201 171</p>
+                <div
+                    style="background: var(--glass); border: 1px solid var(--glass-border); border-radius: 40px; padding: 5rem; display: grid; grid-template-columns: 1fr 1.2fr; gap: 6rem;">
+                    <div>
+                        <h2>Ready to <br><span>Transform?</span></h2>
+                        <p style="margin: 2rem 0 3rem; color: var(--text-muted);">Join leading institutions already
+                            using Jovesh AI to power their operations.</p>
+
+                        <div style="display: flex; flex-direction: column; gap: 2rem;">
+                            <div style="display: flex; align-items: center; gap: 1.5rem;">
+                                <div
+                                    style="width: 50px; height: 50px; background: var(--glass); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--accent);">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Call Us</p>
+                                    <p style="font-weight: 600;">+254 700 740 995</p>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1.5rem;">
+                                <div
+                                    style="width: 50px; height: 50px; background: var(--glass); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--accent);">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p style="font-size: 0.8rem; color: var(--text-muted);">Email Us</p>
+                                    <p style="font-weight: 600;">jovesh123@gmail.com</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fa-solid fa-envelope"></i>
-                            <p>jovesh123@gmail.com</p>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>Maasai Mara University</p>
-                        </div>
                     </div>
-                    <form id="contact-form" style="display: flex; flex-direction: column; gap: 1rem;">
-                        <input type="text" placeholder="Your Name" style="padding: 1rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--secondary); color: white;">
-                        <input type="email" placeholder="Your Email" style="padding: 1rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--secondary); color: white;">
-                        <textarea placeholder="Your Message" rows="5" style="padding: 1rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--secondary); color: white;"></textarea>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    <form id="contact-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <input type="text" placeholder="Full Name"
+                                style="padding: 1.25rem; border-radius: 15px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); color: white; width: 100%;">
+                            <input type="email" placeholder="Work Email"
+                                style="padding: 1.25rem; border-radius: 15px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); color: white; width: 100%;">
+                        </div>
+                        <select
+                            style="padding: 1.25rem; border-radius: 15px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); color: white; appearance: none;">
+                            <option>Select Product Interest</option>
+                            <option>UniBot AI</option>
+                            <option>UniCabinet AI</option>
+                            <option>AfriMaintain AI</option>
+                        </select>
+                        <textarea placeholder="Tell us about your needs" rows="4"
+                            style="padding: 1.25rem; border-radius: 15px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); color: white; resize: none;"></textarea>
+                        <button type="submit" class="btn btn-primary" style="justify-content: center;">Send
+                            Inquiry</button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer style="padding: 4rem 0; border-top: 1px solid var(--glass-border); text-align: center;">
+    <footer>
         <div class="container">
-            <p>&copy; 2026 Jovesh Startup. All rights reserved.</p>
-            <p style="color: var(--text-muted); font-size: 0.8rem; margin-top: 1rem;">Affiliated with Maasai Mara University</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/jovesh logo.png" alt="Jovesh Logo" style="height: 40px; margin-bottom: 2rem;">
+                    <p style="color: var(--text-muted); max-width: 300px;">Pioneering AI Powered solutions for
+                        sustainable institutions management and governance.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">UniBot AI</a></li>
+                        <li><a href="#">UniCabinet AI</a></li>
+                        <li><a href="#">AfriMaintain AI</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jovesh Startup. All rights reserved. In collaboration with Maasai Mara University.</p>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
