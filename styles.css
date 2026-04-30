@@ -107,22 +107,34 @@ nav {
     align-items: center;
 }
 
-.logo-group {
+.logo-link {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
+    text-decoration: none;
 }
 
 .logo-img {
-    height: 50px;
-    filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.3));
+    height: 65px;
+    filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.4));
+    transition: var(--transition);
 }
 
-.uni-logo {
-    height: 40px;
-    opacity: 0.8;
-    border-left: 1px solid var(--glass-border);
-    padding-left: 1.5rem;
+.logo-link:hover .logo-img {
+    transform: scale(1.05) rotate(-5deg);
+}
+
+.brand-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text);
+    letter-spacing: -0.5px;
+}
+
+.brand-name span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-links {
