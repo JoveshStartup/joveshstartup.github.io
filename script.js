@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementById('header');
-    const navLinks = document.querySelectorAll('.nav-links a');
+    const navLinksList = document.querySelector('.nav-links');
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
     const sections = document.querySelectorAll('section');
     
     // Header shadow and padding on scroll
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        navLinks.forEach(link => {
+        document.querySelectorAll('.nav-links a').forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href').includes(current)) {
                 link.classList.add('active');
@@ -29,8 +30,33 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Mobile menu toggle
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', () => {
+            navLinksList.classList.toggle('active');
+            const icon = mobileToggle.querySelector('i');
+            if (navLinksList.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinksList.classList.remove('active');
+                const icon = mobileToggle.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+    }
+
     // Smooth scroll for nav links
-    navLinks.forEach(anchor => {
+    document.querySelectorAll('.nav-links a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
