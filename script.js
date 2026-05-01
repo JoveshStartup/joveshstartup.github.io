@@ -1,4 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Theme Toggling Logic
+    const themeToggles = document.querySelectorAll('.theme-toggle');
+    const savedTheme = localStorage.getItem('jovesh-theme');
+    
+    function updateThemeIcons(theme) {
+        themeToggles.forEach(toggle => {
+            const sunIcon = toggle.querySelector('.sun-icon');
+            const moonIcon = toggle.querySelector('.moon-icon');
+            if (theme === 'light') {
+                if (sunIcon) sunIcon.style.display = 'none';
+                if (moonIcon) moonIcon.style.display = 'block';
+            } else {
+                if (sunIcon) sunIcon.style.display = 'block';
+                if (moonIcon) moonIcon.style.display = 'none';
+            }
+        });
+    }
+
+    if (savedTheme === 'light') {
+        document.body.classList.add('light-theme');
+        updateThemeIcons('light');
+    }
+
+    themeToggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+            const isLight = document.body.classList.contains('light-theme');
+            
+            localStorage.setItem('jovesh-theme', isLight ? 'light' : 'dark');
+            updateThemeIcons(isLight ? 'light' : 'dark');
+        });
+    });
+
     const header = document.getElementById('header');
     const navLinksList = document.querySelector('.nav-links');
     const mobileToggle = document.querySelector('.mobile-menu-toggle');

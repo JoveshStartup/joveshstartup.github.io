@@ -39,12 +39,15 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="mobile-menu-toggle">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <div class="header-cta">
-                    <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Join
-                        the Future</a>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </button>
+                    <div class="mobile-menu-toggle">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <a href="#contact" class="btn btn-primary header-cta" style="padding: 0.6rem 1.5rem; font-size: 0.9rem;">Join the Future</a>
                 </div>
             </nav>
         </div>
@@ -70,8 +73,7 @@
                     </div>
                     <div class="hero-visual">
                         <div class="hero-card" style="padding: 0; overflow: hidden;">
-                            <div
-                                style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: rgba(255,255,255,0.05); border-bottom: 1px solid var(--glass-border);">
+                            <div class="hero-card-header">
                                 <div style="display: flex; gap: 0.5rem;">
                                     <div style="width: 10px; height: 10px; background: #ef4444; border-radius: 50%;">
                                     </div>
@@ -152,12 +154,11 @@
         <section id="about" class="section about-section">
             <div class="container">
                 <div class="about-grid">
-                    <div style="position: relative;">
-                        <img src="assets/jovesh logo.png" alt="About Jovesh"
-                            style="width: 100%; opacity: 0.5; filter: grayscale(0.2) brightness(2);" loading="lazy">
-                        <div
-                            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 100%;">
-                            <h2 class="about-bg-text">JOVESH</h2>
+                    <div class="about-visual">
+                        <div class="about-logo-wrapper">
+                            <img src="assets/jovesh logo.png" alt="About Jovesh" class="about-logo-main" loading="lazy">
+                            <h3 class="about-logo-title">JOVESH</h3>
+                            <div class="logo-glow"></div>
                         </div>
                     </div>
                     <div>
