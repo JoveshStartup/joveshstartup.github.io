@@ -67,13 +67,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileToggle) {
         mobileToggle.addEventListener('click', () => {
             navLinksList.classList.toggle('active');
-            const icon = mobileToggle.querySelector('i');
+            const menuIcon = mobileToggle.querySelector('.menu-icon');
+            const closeIcon = mobileToggle.querySelector('.close-icon');
+            
             if (navLinksList.classList.contains('active')) {
-                icon.classList.remove('fa-bars');
-                icon.classList.add('fa-xmark');
+                if (menuIcon) menuIcon.style.display = 'none';
+                if (closeIcon) closeIcon.style.display = 'block';
             } else {
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
+                if (menuIcon) menuIcon.style.display = 'block';
+                if (closeIcon) closeIcon.style.display = 'none';
             }
         });
 
@@ -81,9 +83,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinksList.classList.remove('active');
-                const icon = mobileToggle.querySelector('i');
-                icon.classList.remove('fa-xmark');
-                icon.classList.add('fa-bars');
+                const menuIcon = mobileToggle.querySelector('.menu-icon');
+                const closeIcon = mobileToggle.querySelector('.close-icon');
+                if (menuIcon) menuIcon.style.display = 'block';
+                if (closeIcon) closeIcon.style.display = 'none';
             });
         });
     }
