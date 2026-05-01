@@ -131,22 +131,18 @@
                             </a>
                         </div>
                     </div>
-                    <!-- AfriMaintain AI -->
                     <div class="product-card">
-                        <div class="product-card">
-                            <div class="product-image">
-                                <img src="assets/AfriMaintain AI.png" alt="AfriMaintain AI" loading="lazy">
-                            </div>
-                            <div class="product-info">
-                                <h3>AfriMaintain AI</h3>
-                                <p>Predictive equipment maintenance. AI-driven failure detection to minimize downtime
-                                    and
-                                    maximize efficiency.</p>
-                                <a href="#" class="learn-more">
-                                    Learn More
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                </a>
-                            </div>
+                        <div class="product-image">
+                            <img src="assets/AfriMaintain AI.png" alt="AfriMaintain AI" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>AfriMaintain AI</h3>
+                            <p>Predictive equipment maintenance. AI-driven failure detection to minimize downtime and
+                                maximize efficiency.</p>
+                            <a href="#" class="learn-more">
+                                Learn More
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -229,22 +225,21 @@
                             </div>
                         </div>
                     </div>
-                    <form id="contact-form" style="display: flex; flex-direction: column; gap: 1.5rem;">
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                            <input type="text" placeholder="Full Name"
-                                style="padding: 1.25rem; border-radius: 15px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); color: white; width: 100%;">
-                            <input type="email" placeholder="Work Email"
-                                style="padding: 1.25rem; border-radius: 15px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); color: white; width: 100%;">
+                    <form id="contact-form" action="https://formspree.io/f/xjglvqrb" method="POST" class="contact-form">
+                        <div class="form-grid">
+                            <input type="text" name="name" placeholder="Full Name" required class="form-input">
+                            <input type="email" name="email" placeholder="Work Email" required class="form-input">
                         </div>
-                        <select
-                            style="padding: 1.25rem; border-radius: 15px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); color: white; appearance: none;">
-                            <option>Select Product Interest</option>
-                            <option>UniBot AI</option>
-                            <option>UniCabinet AI</option>
-                            <option>AfriMaintain AI</option>
-                        </select>
-                        <textarea placeholder="Tell us about your needs" rows="4"
-                            style="padding: 1.25rem; border-radius: 15px; border: 1px solid var(--glass-border); background: rgba(255,255,255,0.02); color: white; resize: none;"></textarea>
+                        <div class="select-wrapper">
+                            <select name="product" required class="form-select">
+                                <option value="" disabled selected>Select Product Interest</option>
+                                <option value="UniBot AI">UniBot AI</option>
+                                <option value="UniCabinet AI">UniCabinet AI</option>
+                                <option value="AfriMaintain AI">AfriMaintain AI</option>
+                            </select>
+                        </div>
+                        <textarea name="message" placeholder="Tell us about your needs" rows="4" required
+                            class="form-textarea"></textarea>
                         <button type="submit" class="btn btn-primary" style="justify-content: center;">Send
                             Inquiry</button>
                     </form>

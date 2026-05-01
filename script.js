@@ -99,23 +99,42 @@ document.addEventListener('DOMContentLoaded', () => {
     // Form submission
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             const btn = contactForm.querySelector('button');
             const originalText = btn.innerHTML;
+            
             btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Processing...';
             btn.disabled = true;
 
-            setTimeout(() => {
-                btn.style.background = '#10b981';
-                btn.innerHTML = '<i class="fa-solid fa-check"></i> Inquiry Sent Successfully';
-                setTimeout(() => {
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    btn.style.background = '#10b981';
+                    btn.innerHTML = '<i class="fa-solid fa-check"></i> Inquiry Sent Successfully';
                     contactForm.reset();
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                btn.style.background = '#ef4444';
+                btn.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Error. Please try again.';
+            } finally {
+                setTimeout(() => {
                     btn.style.background = '';
                     btn.innerHTML = originalText;
                     btn.disabled = false;
                 }, 3000);
-            }, 2000);
+            }
         });
     }
 });
