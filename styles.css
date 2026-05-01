@@ -102,7 +102,13 @@ header.scrolled {
 .container {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 2rem;
+    }
 }
 
 nav {
@@ -228,8 +234,13 @@ nav {
     transition: var(--transition);
 }
 
+.header-cta {
+    display: none;
+}
+
 @media (min-width: 1024px) {
     .mobile-menu-toggle { display: none; }
+    .header-cta { display: block; }
 }
 
 /* Hero Section */
@@ -283,10 +294,14 @@ nav {
 }
 
 .hero-content h1 {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     line-height: 1.1;
     margin-bottom: 1.5rem;
     font-weight: 800;
+}
+
+@media (min-width: 768px) {
+    .hero-content h1 { font-size: 3rem; }
 }
 
 @media (min-width: 1024px) {
@@ -438,8 +453,14 @@ nav {
 }
 
 .section-title h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .section-title h2 {
+        font-size: 3rem;
+    }
 }
 
 .section-title p {
@@ -566,6 +587,24 @@ nav {
         gap: 6rem;
     }
 }
+
+.about-bg-text {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--accent);
+    opacity: 0.25;
+}
+
+.about-heading {
+    font-size: 2rem;
+    margin: 1rem 0 2rem;
+}
+
+@media (min-width: 768px) {
+    .about-bg-text { font-size: 5rem; }
+    .about-heading { font-size: 3rem; }
+}
+
 /* Contact Section */
 .contact-card-wrapper {
     background: var(--glass);
@@ -590,6 +629,17 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+}
+
+.contact-card-wrapper h2 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+    .contact-card-wrapper h2 {
+        font-size: 3.5rem;
+    }
 }
 
 .form-grid {
