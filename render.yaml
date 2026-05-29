@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: jovesh-startup
+    env: static
+    buildCommand: ""
+    staticPublishPath: .
